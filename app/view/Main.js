@@ -22,7 +22,13 @@ Ext.define('SpreadO.view.Main', {
             {
             	title:"Favorites",
             	iconCls:"star",
-            	html:"TODO"
+            	html:"Device --> " + 
+            		 "name["+Ext.device.Device.name+"] - "+
+            		 "platform["+Ext.device.Device.platform+"] - "+
+            		 "scheme["+Ext.device.Device.scheme+"] - "+
+            		 "uuid["+Ext.device.Device.uuid+"] - ";
+            		 
+            		 
             }
         ]
     }

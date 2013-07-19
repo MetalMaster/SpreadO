@@ -22,5 +22,18 @@ Ext.define('SpreadO.view.contacts.List', {
 	    			'</div>'+
     			'</div>',
     	
+    	listeners:{
+    		itemtap:function(dataView, index,target,record,eOpts){
+	    		console.log("Tapped item: " + record.get("name"));
+	    		Ext.device.Notification.vibrate();
+	    		Ext.device.Notification.show({
+				    title: 'Tapped item',
+				    message: 'You tapped: ' +  record.get("name")
+				});
+    		}
+    	}
+    	
+    	
+    	
     }
  });

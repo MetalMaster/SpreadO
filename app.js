@@ -19,6 +19,8 @@ Ext.Loader.setPath({
 });
 //</debug>
 
+Ext.require('Ext.device.Connection');
+
 Ext.application({
     name: 'SpreadO',
 
